@@ -1,0 +1,14 @@
+// Multipipeline example
+pipeline {
+    agent any
+    stages {
+        stage('pull-from-github-build') {
+            steps {
+                echo "Building 
+                bat "npm install"
+            }
+			
+        }
+    }
+    
+}
